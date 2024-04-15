@@ -38,7 +38,6 @@
   display: none!important;
 }
 
-
 @media screen and (max-width: 990px){
   .user span {display: none;}
   .user {
@@ -46,15 +45,19 @@
     border-radius:none;
     font-size:25px;
   }
+
 .d-flex.search-bar {
   display: none!important;
 }
+
 .d-flex .search-icon{
 display: flex!important;
 }
+
 .navbar-brand{
   display: none!important;
 }
+
 .headerlogo{
     width:4em;
 }

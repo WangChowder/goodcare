@@ -66,6 +66,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 900px) {
   .old1 {
     font-size: 40px
