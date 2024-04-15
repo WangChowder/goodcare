@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './IndexNav.css'
 
 function IndexNav() {
@@ -25,39 +26,39 @@ function IndexNav() {
             <div class="offcanvas-body">
               <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{ bsScrollHeight: '100px' }}>
                 <li className="nav-item">
-                  <a href="/news" className="topnav-title">最新消息</a>
+                  <NavLink to="/news" className="topnav-title">最新消息</NavLink>
                 </li>
                 <li class="nav-item dropdown ">
                   <div className="topnav-title">關於長照</div>
                   <ul class="dropdown-menu dropdown-content">
                     <li class="dropdown-content1">
-                      <a href="/policy">政府長照政策</a>
+                      <NavLink to="/policy">政府長照政策</NavLink>
                     </li>
                     <li className="dropdown-content1">
-                      <a href="/video">長照影音文章</a>
+                      <NavLink to="/video">長照影音文章</NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a href="/service" className="topnav-title">服務資訊</a>
+                  <NavLink to="/service" className="topnav-title">服務資訊</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="/subsidy" className="topnav-title">補助資訊</a>
+                  <NavLink to="/subsidy" className="topnav-title">補助資訊</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="/map" className="topnav-title">長照據點地圖</a>
+                  <NavLink to="/map" className="topnav-title">長照據點地圖</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="/product" className="topnav-title">醫療輔具商品</a>
+                  <NavLink to="/product" className="topnav-title">醫療輔具商品</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="/reserve" className="topnav-title">預約照服員</a>
+                  <NavLink to="/reserve" className="topnav-title">預約照服員</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href={road} className="topnav-title">會員資料</a>
+                  <NavLink to={road} className="topnav-title">會員資料</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="/webqa" className="topnav-title">網站常見問題</a>
+                  <NavLink to="/webqa" className="topnav-title">網站常見問題</NavLink>
                 </li>
               </ul>
             </div>
