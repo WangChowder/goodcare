@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Footer.css'
 
 function Footer() {
@@ -21,18 +22,18 @@ function Footer() {
                   <div><img src={require("../../asset/images/index/footerlogo.png")} alt='footerLogo'/></div>
                   <br/>
                   <div className="d-flex justify-content-between">
-                      <a href="https://www.facebook.com/mohw.gov.tw/" target="_blank" rel="noreferrer">
+                      <NavLink to="https://www.facebook.com/mohw.gov.tw/" target="_blank" rel="noreferrer">
                           <h1><i className="fa-brands fa-facebook text-white"></i></h1>
-                      </a>
-                      <a href="https://twitter.com/MOHW_Taiwan" target="_blank" rel="noreferrer">
+                      </NavLink>
+                      <NavLink to="https://twitter.com/MOHW_Taiwan" target="_blank" rel="noreferrer">
                           <h1><i className="fa-brands fa-x-twitter text-white"></i></h1>
-                      </a>
-                      <a href="https://page.line.me/mohw" target="_blank" rel="noreferrer">
+                      </NavLink>
+                      <NavLink to="https://page.line.me/mohw" target="_blank" rel="noreferrer">
                           <h1><i className="fa-brands fa-line text-white"></i></h1>
-                      </a>
-                      <a href="https://www.youtube.com/watch?v=hxgI7g-cl4Q" target="_blank" rel="noreferrer">
+                      </NavLink>
+                      <NavLink to="https://www.youtube.com/watch?v=hxgI7g-cl4Q" target="_blank" rel="noreferrer">
                           <h1> <i className="fa-brands fa-youtube text-white"></i></h1>
-                      </a>
+                      </NavLink>
                   </div>
               </div>
           </div>

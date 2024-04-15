@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import AuthContext from "../../Context/AuthProvider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     const sessionData = localStorage.getItem('auth')
@@ -30,8 +31,8 @@ function Header() {
                 <div className="d-flex">
                     <nav className="navbar me-4">
                         <div className="container-fluid">
-                            <a href="https://www.hpa.gov.tw/Home/Index.aspx" className="navbar-brand me-4" id='tmp'>衛生福利部</a>
-                            <a href="/" className="navbar-brand me-4">首頁專區</a>
+                            <NavLink to="https://www.hpa.gov.tw/Home/Index.aspx" className="navbar-brand me-4" id='tmp'>衛生福利部</NavLink>
+                            <NavLink to="/" className="navbar-brand me-4">首頁專區</NavLink>
                             <form className="d-flex search-bar" role="search" action="/news">
                                 <input className="form-control me-2" type="search" placeholder="搜尋長照補助" aria-label="Search" name="keyword" />
                                 <button className="btn btn-outline-success" type="submit">Search</button>
@@ -52,20 +53,20 @@ function Header() {
                         </div>
                     </nav>
                     <div className="d-flex align-items-center">
-                        <a className="search-icon text-decoration-none" data-bs-toggle="modal" data-bs-target="#searchmodal"><i className="fa-solid fa-magnifying-glass"></i></a>
-                        <a className="user text-dark" onClick={doRedirect} href='#a'>
+                        <NavLink className="search-icon text-decoration-none" data-bs-toggle="modal" data-bs-target="#searchmodal"><i className="fa-solid fa-magnifying-glass"></i></NavLink>
+                        <NavLink className="user text-dark" onClick={doRedirect} href='#a'>
                             <i className="fa-solid fa-user"></i>
                             &nbsp;
                             <span>{userData.name ? `${userData.name}  你好` : '會員登入/註冊'}</span>
-                        </a>
+                        </NavLink>
                         &nbsp;
-                        <a className={userData.name ? "user text-dark" : "hide"} onClick={doLogout} href='#a' >
+                        <NavLink className={userData.name ? "user text-dark" : "hide"} onClick={doLogout} href='#a' >
                             <i className="fa-solid fa-arrow-right-from-bracket n"></i>
                             <span>登出</span>
-                        </a>
+                        </NavLink>
                         &nbsp;
-                        <div className="ps-2 mt-2 me-lg-5">
-                            <a href="/cart" ><h2><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /></h2></a>
+                        <div className="ps-2 mt-3 me-lg-5">
+                            <NavLink to="/cart" ><h2><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /></h2></NavLink>
                         </div>
                     </div>
                 </div>

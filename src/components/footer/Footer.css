@@ -31,15 +31,15 @@
   
   @media screen and (max-width: 520px) {
     .footer p{
-        font-size: 10px;
+        font-size: 15px;
     }
     .footer img{
-        width: 11em!important;;
+        width: 13em!important;
     }
   }
 
   @media screen and (max-width: 398px) {
     .footer p{
-        font-size: 9px;
+        font-size: 15px;
     }
   }
