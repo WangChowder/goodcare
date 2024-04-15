@@ -421,3 +421,9 @@
     padding: 0.4em;
   }
 }
+
+@media screen and (max-width: 422px) {
+  .SwiperComponent{
+  display: none;
+  }
+}

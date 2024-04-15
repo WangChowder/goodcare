@@ -28,18 +28,11 @@
         width: 13em!important;;
     }
   }
-  
   @media screen and (max-width: 520px) {
     .footer p{
-        font-size: 15px;
+        font-size: 13px;
     }
     .footer img{
-        width: 13em!important;
-    }
-  }
-
-  @media screen and (max-width: 398px) {
-    .footer p{
-        font-size: 15px;
+        width: 11em!important;;
     }
   }
