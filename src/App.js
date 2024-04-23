@@ -3,13 +3,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Link,
-  // useNavigate,
-  // Outlet,
-  // useLocation,
+
 } from "react-router-dom";
 
-// get page from pages
 import {
   Home,
   News,
@@ -40,10 +36,6 @@ import {
   CheckOrder,
 } from "./pages/appIndex";
 
-//範例用
-import Template from "./pages/Template";
-// const baseURL = "http://18.182.1.131:3000/news";
-
 function App() {
   return (
     <div className="App">
@@ -59,7 +51,6 @@ function App() {
           <Route path="/Map" element={<Map />} />
           <Route path="/Reserve" element={<Reserve />} />
           <Route path="/ReserveConfirm" element={<ReserveConfirm />} />
-          {/* <Route path="/Product" element={<Product />} /> */}
           <Route path="/WebQA" element={<WebQA />} />
 
           {/* 商品頁面 */}
@@ -93,9 +84,6 @@ function App() {
           <Route path="/SubsidySearch" element={<SubsidySearch />} />
           <Route path="/SubsidySearchCFM" element={<SubsidySearchCFM />} />
           <Route path="/SubsidyResult" element={<SubsidyResult />} />
-
-          {/* 範例用 */}
-          <Route path="/Template" element={<Template />} />
         </Routes>
       </Router>
     </div>

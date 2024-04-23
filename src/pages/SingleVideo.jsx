@@ -26,10 +26,8 @@ const Service = () => {
           <div className="col-md-3 d-none d-md-block">
             <VideoSideBar dataList={videoData} />
           </div>
-          {/* 這裡放你的主內容 */}
           <div className="col-12 col-md-9">
             {videoData && <SingleVideoContent dataList={singleContent} />}
-            {/* {videoData && console.log('OK')} */}
           </div>
         </div>
       </div>

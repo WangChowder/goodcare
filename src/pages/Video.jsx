@@ -24,7 +24,6 @@ function Video() {
           <div className="col-lg-3 col-md-4 d-lg-block d-md-block">
             <SideBar title={sidebarTitle} />
           </div>
-          {/* 這裡放你的主內容 */}
           <div className="col-lg-9 col-md-8 new-content">
             <div className="tab-content" id="myTabContent">
               <div
@@ -82,9 +81,6 @@ function Video() {
           </div>
         </div>
       </div>
-
-      <br />
-      <br />
       <Footer />
       <BackToTopBtn />
     </React.Fragment>
