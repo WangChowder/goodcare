@@ -11,12 +11,7 @@ const Service = () => {
     <React.Fragment>
         <Header />
         <IndexNav />
-        <br/>
-        <br/>
         <Register/>
-  
-        {/* 底下用8個換行空出雨footer距離 */}
-        <br />
         <Footersecond/>
         <BackToTopBtn />
       </React.Fragment>

@@ -85,17 +85,6 @@ const Service = () => {
       )}
       {isThird && <SubsidyResult goToFirst={goToFirst} formData={formData} />}
       {isNoMatch && <SubsidyNoMatch goToFirst={goToFirst} />}
-
-      {/* <SubsidyResultC income={incomeValue} /> */}
-      {/* 選擇的收入狀況和對應的政府比例
-      {isThird && (
-        <SubsidyResultC
-          incomeCategory={incomeCategory}
-          subsidyPercentage={getSubsidyPercentage()}
-        />
-      )} */}
-      <br />
-
       <Footersecond />
       <BackToTopBtn />
     </React.Fragment>

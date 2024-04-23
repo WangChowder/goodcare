@@ -74,11 +74,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-
-      {/* 底下用8個換行空出footer距離 */}
-      <br />
-      <br />
-      <br />
       <Footer />
       <BackToTopBtn />
     </>

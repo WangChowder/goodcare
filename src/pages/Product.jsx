@@ -63,9 +63,6 @@ function Service() {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
       <Footersecond />
       <BackToTopBtn />
     </>

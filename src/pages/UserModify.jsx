@@ -15,11 +15,7 @@ const Service = () => {
         <>
         <Header />
         <IndexNav />
-        <br/>
-        <br/>
         <Modify/>
-
-        <br />
         <Footersecond/>
         <BackToTopBtn />
         </>
