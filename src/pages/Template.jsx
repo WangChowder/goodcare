@@ -81,9 +81,7 @@ function Template () {
                     </div>
                 </div>
           </div>
-
         </div>
-
       </div>
       <Footer />
     </div>
