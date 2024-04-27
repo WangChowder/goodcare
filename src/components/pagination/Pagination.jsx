@@ -8,8 +8,6 @@ function Pagination ({ totalNews, newsNum, setCurPage, curPage }) {
     for (let i=1; i<= maxPage; i++) {
       pages.push(i)
     }
-
-    // console.log(maxPage)
     return (
       <nav aria-label="Page navigation example" className="d-flex justify-content-center">
         <ul className="pagination ">

@@ -51,8 +51,8 @@ const CartDetail = ({ doSecondBtn }) => {
       setIsUsed(true)
       notify("使用折扣碼成功！")
     }
-    // console.log(e.code)
   }
+  
   const checkCoupon = e => {
     let checkInd = realCoupon.findIndex(i => i.code === e.target.value)
     setCouponInd(checkInd)

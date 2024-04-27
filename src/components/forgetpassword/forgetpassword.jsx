@@ -40,15 +40,15 @@ const ForegetPassword = () => {
             .then((response => {
                 if (response.data === "restart err") {
                     toast.error('請在試一次',{style: {
-                        minWidth: '200px', //寬
-                        borderRadius: '300px', //長
+                        minWidth: '200px', 
+                        borderRadius: '300px', 
                         fontSize: '20px', 
                         padding: '10px', 
                       }})
                 } else {
                     toast.success('密碼已更新，請重新登入',{style: {
-                        minWidth: '200px', //寬
-                        borderRadius: '300px', //長
+                        minWidth: '200px', 
+                        borderRadius: '300px', 
                         fontSize: '20px', 
                         padding: '10px', 
                       }})

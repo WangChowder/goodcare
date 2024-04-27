@@ -4,7 +4,6 @@ import "./CartPayment.css";
 import axios from 'axios';
 
 const CartPayment = ({ doFirstBtn, doThirdBtn, userData }) => {
-  // const [orderData, setOrderData] = useState({});
   const [isSync, setIsSync] = useState(false);
   // total price
   const sessionData = sessionStorage.getItem("cartInfo")

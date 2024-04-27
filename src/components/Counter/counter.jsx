@@ -30,34 +30,6 @@ const Counter = ({ curNum, childToParent }) => {
       childToParent(counter)
     }
   }, [counter, childToParent])
-  // var doPlus = () => {
-  //     var newcounuter = 0
-  //     if (counter < 10){
-  //         newcounuter = counter +1
-  //         setCounter(newcounuter)
-  //         childToParent(newcounuter)            
-  //     }else{
-  //         // 給定庫存最大數?
-  //         newcounuter = 10
-  //         setCounter(newcounuter)
-  //         childToParent(newcounuter)          
-  //     }
-
-  // }
-
-  // var doReduce = () => {
-  //     var newcounuter = 0
-  //     if(counter > 1) {
-  //         newcounuter = counter -1
-  //         setCounter(newcounuter)
-  //         childToParent(newcounuter)          
-  //     }else{
-  //         newcounuter = 1
-  //         setCounter(newcounuter)
-  //         childToParent(newcounuter)          
-  //     }
-
-  // }
 
   return (
     <React.Fragment>

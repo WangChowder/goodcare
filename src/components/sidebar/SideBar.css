@@ -17,7 +17,6 @@
   font-size: 20px;
 } 
 
-/* 這裡是側邊欄active固定顏色 */
 .w3-sidebar .w3-bar-item.active {
     background-color: #cf4501;
     color: #fff;

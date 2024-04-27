@@ -17,7 +17,7 @@ const Single = () => {
   const [numToBuy, setNumToBuy] = useState(1);
 
   const params = useParams();
-  // console.log(params)
+
 
   const notify = () => toast.success("成功加入購物車！");
 
@@ -40,11 +40,9 @@ const Single = () => {
   }, [params.id, singleList]);
 
   const index = params.id;
-  // console.log(index)
 
   var text = singleList[0].productDescription;
-  // var cardtext= text.replace(/[\\n]/g,'') + '<br/>'
-  // console.log(cardtext)
+
   const cardText = text.split("\\n").map((line, ind) => (
     <React.Fragment key={ind}>
       {line}

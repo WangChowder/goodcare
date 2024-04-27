@@ -21,8 +21,6 @@ const scrollToTop = () =>{
 	window.scrollTo({ 
 	top:1100, 
 	behavior: 'smooth'
-	/* you can also use 'auto' behaviour 
-		in place of 'smooth' */
 	}); 
 }; 
 
@@ -34,7 +32,6 @@ return (
 		style={{display: visible ? 'inline' : 'none'}}
 		/> 
 	</div>
-    // <button id="backToTopBtn" onclick="scrollToTop()">⬆︎</button>
 ); 
 } 
 

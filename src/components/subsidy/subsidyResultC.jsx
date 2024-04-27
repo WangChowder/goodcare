@@ -98,7 +98,6 @@ const SubsidyResultC = ({ formData }) => {
             </tbody>
           </table>
         </div>
-        {/* end of失能等级 */}
       </div>
     </React.Fragment>
   );

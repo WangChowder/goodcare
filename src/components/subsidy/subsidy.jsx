@@ -1,6 +1,5 @@
 import React from "react";
 import "../../asset/css/subsidy.css";
-// import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const subsidyHome = ({ goToFirst }) => {
   return (

@@ -6,23 +6,7 @@ import axios from 'axios'
 
 const Card = ({ category,sortBy,search }) => {
     const [productList,setProductList] = useState([])
-    // const [category] = useParams()
-    // console.log(category)
-    // useEffect(() => {
-    //     if(category){
-    //         axios.get(`http://localhost:8000/product/category/${category}`)
-    //         .then((result => {
-    //             setProductList(result.data)
-    //         }))
-    //     }else{
-    //      axios.get(`http://localhost:8000/product/`)
-    //     .then((result => {
-    //         setProductList(result.data)
-    //         // console.log(result.data)
-    //     }))   
-    //     }
-        
-    // },[category])
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -42,7 +26,6 @@ const Card = ({ category,sortBy,search }) => {
                 setProductList(sortedProducts);
             } 
             catch (error) {
-                // console.error('Error fetching product data:', error);
             }
         };
 

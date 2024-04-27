@@ -16,30 +16,6 @@ function ReserveConfirm() {
     navigate('/reserve', { state: { formData } });
   };
 
-
-  
-  // 點擊按鈕時觸發的函式
-  // const handleCheckClick = () => {
-  //   // 顯示 SweetAlert 提示框
-  //   Swal.fire({
-  //     icon: 'success',
-  //     title: '預約成功！',
-  //     text: '會由專人與主要聯絡人聯繫。',
-  //     imageUrl: require("../../asset/images/reserve/confirm_pic.jpg"),
-  //     imageAlt: '圖片',
-  //     imageWidth: 300,
-  //     imageHeight: 200,
-  //     showConfirmButton: false,
-  //   });
-
-  //   // 將網頁重定向到首頁
-  //   setTimeout(() => {
-  //     window.location.href = "/";
-  //   }, 3000);
-
-  // };
-
-
   const handleCheckClick = async (formData) => {
     try {
       const response = await axios.post('http://localhost:8000/reserve', formData, {
@@ -67,7 +43,6 @@ function ReserveConfirm() {
         alert('預約失敗，請重試')
       }
     } catch (error) {
-      // 處理錯誤
       console.error("Error:", error);
       console.log(formData);
     }
