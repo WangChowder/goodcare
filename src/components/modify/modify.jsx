@@ -71,9 +71,7 @@ const Modify = () => {
     
 
     var DoCheck = async() => {
-        // e.preventDefault()
         if (auth.accessToken && removePwd === checkremovePwd){
-            // alert('ok')
             await axios.post('http://localhost:8000/member/modify',JSON.stringify({account,removePwd,tel,address}),{
                 headers:{
                     "Content-Type":"application/json",
@@ -83,8 +81,8 @@ const Modify = () => {
             .then((response => {
                 if(response.data === "member update"){
                     toast.success('修改成功',{style: {
-                        minWidth: '200px', //寬
-                        borderRadius: '300px', //長
+                        minWidth: '200px', 
+                        borderRadius: '300px',
                         fontSize: '20px', 
                         padding: '10px', 
                       }})
